@@ -5,7 +5,7 @@
       <h1 class="header center white-text text-lighten-2">Portfolio</h1>
     </div>
   </div>
-  <div class="parallax"><%= image_tag("pinkroses.jpg", alt: "Unsplashed background img 3") %></div>
+  <div class="parallax"><%= image_tag("pinkroses.jpg") %></div>
 </div>
 
 
@@ -34,8 +34,6 @@
             <li><%= link_to "3", portfolio3_path(anchor: "one"), class: "waves_effect" %></li>
             <li class="waves-effect"><a href="#!"><i class="material-icons">></i></a></li>
           </ul>
-           
-          
           <!--End Pagination-->
           
           
@@ -164,6 +162,17 @@
           <div class="row">
             <div class="col s12 center">
               <hr/>
+              
+              <!--Pagination-->
+              <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons"><</i></a></li>
+                <li><%= link_to "1", portfolio_path(anchor: "one"), class: "active" %></li>
+                <li><%= link_to "2", portfolio2_path(anchor: "one"), class: "waves_effect" %></li>
+                <li><%= link_to "3", portfolio3_path(anchor: "one"), class: "waves_effect" %></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">></i></a></li>
+              </ul>
+              <!--End Pagination-->
+              
               <a class="waves-effect waves-light btn pink darken-1">Contact Me</a>
             </div>
           </div>  
