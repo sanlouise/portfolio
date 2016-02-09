@@ -5,8 +5,13 @@
 hr {
   margin-bottom:20px;
   margin-top:20px;
+  border: 1px solid #f06292;
 }
 
-ul li{
+.portfolio li{
    list-style-type: circle !important;
+}
+
+.no-ul-styling li{
+  list-style-type: none !important;
 }
