@@ -9,6 +9,12 @@ class PagesController < ApplicationController
   def portfolio 
   end 
   
+  def portfolio2
+  end
+  
+  def portfolio3
+  end
+  
   def blog 
   end
   
