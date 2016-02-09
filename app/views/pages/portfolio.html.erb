@@ -25,15 +25,7 @@
           </br>
           
           <!--Pagination-->
-          <ul class="pagination center">
-            <li class="disabled"><a href="#!"><i class="material-icons"><</i></a></li>
-            <li class="active"><a href="#!">1</a></li>
-            <li class="waves-effect"><a href="#!">2</a></li>
-            <li class="waves-effect"><a href="#!">3</a></li>
-            <li class="waves-effect"><a href="#!">4</a></li>
-            <li class="waves-effect"><a href="#!">5</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">></i></a></li>
-          </ul>
+
           
           <!--End Pagination-->
           
@@ -109,13 +101,12 @@
                      <li>Users sign up to the platform to view and share their favorite vegan recipes.</li>
                    </ul>
                    <ul class="portfolio">
-                    <li>Developed from scratch without scaffolding.</li>
-                    <li>Created and implemented database architecture for the application using SQLite3.</li>
-                    <li>Created user authentication system from scratch without gems.</li>
-                    <li>Designed UI of the pages using custom CSS, Twitter Bootstrap, Font Awesome, and JavaScript/JQuery.</li>
-                    <li>Applied a test driven (TDD) approach through entire development process.</li>
-                    <li>Deployed application using Heroku.</li>
-                    <li>Set up and connected application to Amazon Web Services (AWS S3) for image uploads. </li></p>
+                    <li>Developed from scratch without scaffolding.</li>	
+                    <li>Applied a test driven (TDD) approach through entire development process.</li>	
+                    <li>Designed UI of the pages using custom CSS, Twitter Bootstrap, and JavaScript/JQuery.</li>	
+                    <li>Used ImageMagick and applied Javascript validations for image uploads.</li>	
+                    <li>Manually built user authentication without using gems.</li>	
+                    <li>Deployed application using Heroku set up application to AWS S3.</li>	
                    </ul>
                    
                    <ul class="no-ul-styling">
@@ -130,21 +121,45 @@
           
           <!--End Mrs Green-->
           
+          <!--StockTracker-->
+          <div class="row">
+            <div class="col s12">
+              <hr/>
+                <div class="col s12 l7"><span class="flow-text">Stock Tracker</span>
+                 <p> 
+                   <ul class="no-ul-styling">
+                     <li>Users can easily search and track stocks. They can also follow what their friends are tracking.</li>
+                   </ul>
+                   <ul class="portfolio">
+                    <li>Developed from scratch with scaffolding.</li>
+                    <li>Designed UI with custom CSS, Sass, Twitter Bootstrap and JavaScript/JQuery.</li>
+                    <li>Used Yahoo API for tracking stock markets.</li>
+                    <li>Applied Devise gem for user authentication.</li>
+                    <li>Implemented auto complete search function using AJAX.</li>
+                    <li>Implemented ‘adding friends’ functionality.</li>
+                    <li>Deployed application using Heroku with PostgreSQL.</li>
+                   </ul>
+                   
+                   <ul class="no-ul-styling">
+                     <li><i class="fa fa-github"></i> <%= link_to "GitHub Repository", 'https://github.com/sanlouise/stocktracker' %> </li>
+                   </ul>
+                </div>
+                <div class="col s12 l5">
+                  <%= image_tag("Stocktracker_s.png", class: "responsive-img z-depth-2") %>
+                </div>
+              </div>
+          </div>         
           
+          <!--End StockTracker-->
+
           <div class="row">
             <div class="col s12 center">
+              <hr/>
               <a class="waves-effect waves-light btn pink darken-1">Contact Me</a>
             </div>
           </div>  
           
-          
-          
-          
-          
-          
-          
-          
-          
+
         </div>
       </div>
     </div>
