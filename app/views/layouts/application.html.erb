@@ -6,16 +6,17 @@
   <%= render 'layouts/head' %>
 </head>
 <body>
+  <div class="wrapper">
 
-  <%= render 'layouts/nav' %>
-  <main class="Site-content">
-  <%= render 'layouts/messages' %>
-
-  <%= yield %>
+    <%= render 'layouts/nav' %>
+    <main class="Site-content">
+    <%= render 'layouts/messages' %>
   
-  <%= render 'layouts/footer' %>
-  </main>
-
+    <%= yield %>
+    
+    <%= render 'layouts/footer' %>
+    </main>
+  </div>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>  
   
 </body>
