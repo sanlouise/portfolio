@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-  
-<head>
-  
-  <%= render 'layouts/head' %>
-</head>
-<body>
-  <div class="wrapper">
+	<body>
+	<div id="wrapper">
+		<div id="header">
+			<%= render 'layouts/head' %>
+		</div>
 
-    <%= render 'layouts/nav' %>
-    <main class="Site-content">
-    <%= render 'layouts/messages' %>
-  
-    <%= yield %>
-    
-    <%= render 'layouts/footer' %>
-    </main>
-  </div>
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>  
-  
-</body>
+		<div id="content">
+			<%= render 'layouts/nav' %>
+			<%= render 'layouts/messages' %>
+      <%= yield %>
+		 </div>
+
+		<div id="footer">
+			<%= render 'layouts/footer' %>
+			<div style="clear: both"></div>
+		</div>
+
+		<div style="clear: both;"></div>
+	</div>
+	
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>  
+	
+	</body>
 </html>

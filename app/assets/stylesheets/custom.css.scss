@@ -29,3 +29,25 @@ i.fa.fa-linkedin.fa-2x{
 i.fa.fa-github.fa-2x{
   color: white !important;
 }
+
+#wrapper{
+	border: 1px solid black;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto; 
+	position: relative; 
+	min-height: 99%;
+}
+
+.footer{
+	height: 50px; 
+	background: blue;
+	position: absolute !important; 
+	bottom: 3; 
+	width: inherit;
+	text-align: center;
+}
+
+.btn-large.waves-effect.waves-light.pink.darken-1{
+    margin-bottom:100px;
+}
