@@ -17,12 +17,10 @@
           <!--Header portfolio-->
           <h2 class="center brown-text">Ruby on Rails</h2>
           <h5 class="center">Personal Projects</h5>
-
           <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
           </br>
           
           <a href="#one" class="goto-next scrolly"></a>
-          
           <!--Pagination-->
           <ul class="pagination center">
             <li class="disabled"><a href="#!"><i class="material-icons"><</i></a></li>
@@ -58,10 +56,17 @@
                    </ul>
                 </div>
                 <div class="col s12 l5">
-                  <%= image_tag("globetrotter_s.png", class: "responsive-img z-depth-2") %>
+                  <%= link_to 'http://globetrotter.herokuapp.com/' do %>
+                    <%= image_tag("globetrotter_s.png", class: "responsive-img z-depth-2") %>
+                  <% end %>
                 </div>
               </div>
           </div>
+          
+                
+                    
+          
+          
           <!--End Globetrotter-->
           
           <!--Dive Buddies-->
@@ -89,7 +94,9 @@
                    </ul>
                 </div>
                 <div class="col s12 l5">
-                  <%= image_tag("Divebuddies_s.png", class: "responsive-img z-depth-2") %>
+                  <%= link_to 'http://divebuddies.herokuapp.com/' do %>
+                    <%= image_tag("Divebuddies_s.png", class: "responsive-img z-depth-2") %>
+                  <% end %>
                 </div>
               </div>
           </div>         
@@ -118,7 +125,9 @@
                    </ul>
                 </div>
                 <div class="col s12 l5">
-                  <%= image_tag("mrsgreen_s.png", class: "responsive-img z-depth-2") %>
+                  <%= link_to 'http://mrsgreen.herokuapp.com/' do %>
+                    <%= image_tag("mrsgreen_s.png", class: "responsive-img z-depth-2") %>
+                  <% end %>
                 </div>
               </div>
           </div>         
@@ -149,7 +158,9 @@
                    </ul>
                 </div>
                 <div class="col s12 l5">
-                  <%= image_tag("Stocktracker_s.png", class: "responsive-img z-depth-2") %>
+                  <%= link_to 'http://socialstocktracker.herokuapp.com/' do %>
+                    <%= image_tag("Stocktracker_s.png", class: "responsive-img z-depth-2") %>
+                  <% end %>
                 </div>
               </div>
           </div>         
