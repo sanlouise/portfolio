@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get '/blog', to: 'pages#blog' 
   get '/contact', to: 'pages#contact' 
   
+  resources :contacts
+  
 end
