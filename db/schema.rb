@@ -11,16 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160210141044) do
+ActiveRecord::Schema.define(version: 20160328175138) do
 
-  create_table "contacts", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.text     "comments"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "rails_projects", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "points"
+    t.string   "github"
+    t.string   "live_link"
+    t.string   "image"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
-
-

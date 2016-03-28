@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :rails_projects
   root 'pages#home'
   
   get '/portfolio', to: 'pages#portfolio'

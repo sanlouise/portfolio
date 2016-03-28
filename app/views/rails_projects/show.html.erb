@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @rails_project.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @rails_project.description %>
+</p>
+
+<p>
+  <strong>Points:</strong>
+  <%= @rails_project.points %>
+</p>
+
+<p>
+  <strong>Github:</strong>
+  <%= @rails_project.github %>
+</p>
+
+<p>
+  <strong>Live link:</strong>
+  <%= @rails_project.live_link %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @rails_project.image %>
+</p>
+
+<%= link_to 'Edit', edit_rails_project_path(@rails_project) %> |
+<%= link_to 'Back', rails_projects_path %>

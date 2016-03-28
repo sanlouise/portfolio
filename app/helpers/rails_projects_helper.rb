@@ -1,0 +1,2 @@
+module RailsProjectsHelper
+end
