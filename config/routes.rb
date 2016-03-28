@@ -3,9 +3,8 @@ Rails.application.routes.draw do
   resources :rails_projects
   root 'pages#home'
   
-  get '/portfolio', to: 'pages#portfolio'
+  get '/rails-projects', to: 'rails_projects#index'
   get '/portfolio2', to: 'pages#portfolio2'
-  get '/portfolio3', to: 'pages#portfolio3'
   get '/about', to: 'pages#about' 
   get '/blog', to: 'pages#blog' 
   get '/contact', to: 'pages#contact' 
