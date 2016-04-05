@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :blogs
   resources :rails_projects
   root 'pages#home'
   
