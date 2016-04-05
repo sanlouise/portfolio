@@ -1,10 +1,11 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :set_blogs, only: [:index, :show]
+  before_action :require_user, except: [:show, :index]
 
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
   end
 
   # GET /blogs/1
@@ -66,9 +67,13 @@ class BlogsController < ApplicationController
     def set_blog
       @blog = Blog.find(params[:id])
     end
+    
+    def set_blogs
+      @blogs = Blog.all
+    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body, :image)
+      params.require(:blog).permit(:title, :content, :image)
     end
 end
