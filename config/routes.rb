@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about' 
   get '/blog', to: 'pages#blog' 
   get '/contact', to: 'pages#contact' 
+  
+  get '/login', to: 'logins#new'
+  post '/login', to: 'logins#create'
+  get '/logout', to: 'logins#destroy'
+  
 
   
 end

@@ -1,19 +1,13 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="blog-post-bg z-depth-1 col s12 m8 offset-m2 l6 offset-l3">
+    <h2 class="center"> 
+      <span class="blog-title"><%= @blog.title %></span>
+    </h2>
+    <p class="center"><%= @blog.created_at.strftime("%B %d, %Y") %></p>
+    <%= @blog.body.html_safe %>
+  </div>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @blog.image %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+<div class="row col s12 center">
+  <%= link_to 'Back to Blog Posts', blogs_path, class: "btn waves-effect waves-light" %>
+</div>

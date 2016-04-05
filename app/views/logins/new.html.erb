@@ -1,0 +1,21 @@
+<h2 class="center red-text">Login</h2>
+
+<div class="row">
+  <div class="col m4 offset-m4 center">  
+    <%= form_tag '/login' do %>
+      
+      <div class="input-field">
+        <%= label_tag :email %>
+        <%= text_field_tag :email %>
+      </div>
+      
+      <div class="input-field">
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+      </div>
+      
+      <%= submit_tag 'Login', class: 'btn waves-effect waves-light' %>
+      
+    <% end %>
+  </div>
+</div>
