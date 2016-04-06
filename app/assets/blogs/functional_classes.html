@@ -1,0 +1,90 @@
+<section class="blog-font blog-post">
+<p>A functional class is the simplest possible implementation of a class and 
+can be used to produce fleets of similar objects that all conform to a somewhat 
+similar interface.</p>
+
+<h4>Decorators vs. Classes</h4>
+  
+<p>The main difference between a Decorator function and a class, is that a class 
+builds the object it is going to use whereas a Decorator accepts that object as 
+an input. This post will refer to and build upon the methods built in my former 
+blog post dedicated to the Object Decorator Pattern.</p>
+ 
+<p>
+NOTE: this post elaborates upon the class and methods written in my former blog 
+post on Object Decorators in Javascript. </br>
+To build a functional class, we’ll need to rework our code a bit by moving the 
+object creation into the tigerProps function and remove the obj parameter so that 
+we can declare a local variable. Also, as of convention, we’ll need to capitalize 
+all class names. Our library.js now looks as follows:
+</p>
+  
+<pre><code>var Tiger = function(obj, loc) {
+  obj.loc = loc;
+  obj.move = function() {
+    obj.loc++;
+  };
+  return obj;
+};
+</code></pre>
+
+<p>And run.js:</p>
+
+<pre><code>var bobo = Tiger(2);
+bobo.move();
+var nola = Tiger(7);
+nola.move();
+
+</code></pre>
+
+<p>Functions within a class that produce a fleet of objects are called constructor functions. 
+Their job is to construct the objects that will qualify as members of the class. The objects 
+that are returned from constructor functions are called instances, and the process of creating 
+a new object from a constructor function is called instantiating. </p>
+
+<p>You might have noticed that every time Tiger is called, the move function runs as well - resulting 
+in duplicated methods. Instead, we could use one function object that could be shared with all 
+Tiger objects. We can push the move function outside of the class so it will only be referred to 
+once, and thus only build one such function object (we have now a functional shared pattern!).</p>
+  
+<pre><code>var Tiger = function(loc) {
+  obj.loc = {loc: loc};
+  obj.move = move;
+  return obj;
+};
+
+var move = function() {
+  this.loc++;
+};
+</code></pre>
+
+<p>Note that I wrote this.loc++ instead of obj.loc++, because we moved the function out of the 
+local scope of the Tiger class. Hopefully it is clear that ‘this’ refers to ‘the bobo' or ‘nola’ 
+variables.</p>
+
+<p>It is problematic, however, that we now refer to the move method in two places. For instance, if we 
+were to add methods to make the tigers jump or run our code would look something like this:</p>
+  
+<pre><code>var Tiger = function(loc) {
+  obj.loc = {loc: loc};
+  obj.move = move;
+  obj.jump = jump
+  obj.run = run
+  return obj;
+};
+
+var move = function() {
+  this.loc++;
+};
+
+var jump = function() { … };
+var run = function() { … };
+</code></pre>
+
+<p>This is much easier! Now, if we edit code in our Tiger.methods object, it will automatically become 
+an available property to our Tiger class. Note, instead of naming it a global variable like ‘methods’, 
+it is good practice to clearly name the methods object so it is clear what it belongs to.</p>
+  
+<p>My next blog post will iterate on improving this piece of code!</p>
+
+</section>
