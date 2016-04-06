@@ -8238,7 +8238,7 @@ button.btn-floating {
 }
 
 .dropdown-content {
-  background-color: #fff;
+  background-color: #f06292;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -8262,7 +8262,7 @@ button.btn-floating {
 }
 
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
-  background-color: #eee;
+  background-color: #ec407a;
 }
 
 .dropdown-content li.active.selected {
@@ -8548,7 +8548,6 @@ a.waves-effect .waves-ripple {
 }
 
 .side-nav .collapsible-header {
-  background-color: transparent;
   border: none;
   line-height: inherit;
   height: inherit;
@@ -8561,7 +8560,7 @@ a.waves-effect .waves-ripple {
 
 .side-nav .collapsible-body {
   border: 0;
-  background-color: #fff;
+  background-color: #f8bbd0;
 }
 
 .side-nav .collapsible-body li a {
@@ -9790,14 +9789,13 @@ select {
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
-  background-color: #fff;
+  background-color: #f8bbd0;
   z-index: 999;
   overflow-y: auto;
   will-change: left;
 }
 
 .side-nav.right-aligned {
-  will-change: right;
   right: -105%;
   left: auto;
 }
@@ -9817,12 +9815,12 @@ select {
 }
 
 .side-nav a {
-  color: #444;
+  color: #f48fb1;
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   height: 64px;
   line-height: 64px;
-  padding: 0 15px;
+
 }
 
 .drag-target {
@@ -9877,7 +9875,6 @@ select {
   height: 120vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 997;
-  will-change: opacity;
 }
 
 /*
