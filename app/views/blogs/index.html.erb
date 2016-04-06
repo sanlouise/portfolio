@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <section class="blog-font">
-  
+  <h1 class="center"> Blog </h1>
   <!--Intro Card-->
   <div class="row">
     <div class="col s12 m8 offset-m2">
@@ -11,12 +11,16 @@
             Welcome!
           </div>
           <p>
-            Here you can find all the blog articles starting from the most recent.
+            Here you can find blog posts I’ve written on topics that I felt were worth diving into. 
+            I’ve learned that only when I can explain these topics to others, I have actually fully understood them myself. 
+            With confidence I can say that writing these posts have helped me tremendously clearing up any questions or confusion I had! 
+            Please note that I am always learning and would be happy to hear suggestions to my posts.
+
           </p>
           <br/> 
             <p>Feel free to check out my</p>
-            <%= link_to "rails projects", rails_projects_path, 
-                    class: "waves-effect waves-light btn light-blue" %>
+            <%= link_to "Portfolio", rails_projects_path, 
+                    class:"btn-large waves-effect waves-light pink darken-1" %>
             <p>Otherwise, enjoy the blog posts!</p>
           </div>
         </div>
@@ -28,7 +32,7 @@
   <% @blogs.sort_by{|item| item.created_at}.reverse.each do |blog| %>
     <div class="row">
       <div class="col s12 m4 offset-m4">
-        <div class="card orange">
+        <div class="card white-text center">
           <!--Image-->
           <div class="card-image waves-effect waves-block waves-light">
             <%= link_to image_tag(blog.image), blog_path(blog) if blog.image %>

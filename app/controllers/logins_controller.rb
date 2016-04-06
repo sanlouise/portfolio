@@ -8,7 +8,7 @@ class LoginsController < ApplicationController
     if user && user.authenticate(params[:password])
       
       session[:user_id] = user.id
-      flash[:success] = "Welcome #{user.name}! You are now logged in."
+      flash[:success] = "Welcome #{user.email}! You are now logged in."
       redirect_to blogs_path
       
     else
