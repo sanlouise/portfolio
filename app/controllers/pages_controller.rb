@@ -12,13 +12,18 @@ class PagesController < ApplicationController
   def portfolio2
   end
   
-  def portfolio3
-  end
-  
   def blog 
   end
   
   def contact
   end 
+  
+  def ios_projects
+    @ios_projects = IosProject.all 
+  end
+  
+  def rails_projects
+    @rails_projects = RailsProject.all
+  end
   
 end

@@ -4,7 +4,7 @@
       <span class="blog-title"><%= @blog.title %></span>
     </h2>
     <p class="center"><%= @blog.created_at.strftime("%B %d, %Y") %></p>
-    <%= @blog.body.html_safe %>
+    <%= raw(@blog.body) %>
   </div>
 </div>
 
