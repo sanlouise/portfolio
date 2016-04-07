@@ -7337,7 +7337,7 @@ nav .nav-wrapper {
   height: 100%;
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 600px) {
   nav a.button-collapse {
     display: none;
   }
@@ -7402,7 +7402,7 @@ nav ul {
 }
 
 nav ul li {
-  transition: background-color .3s;
+  transition: background-color .5s;
   float: left;
   padding: 0;
 }
@@ -7426,8 +7426,11 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
   margin-right: 15px;
 }
 
+
+
+//Determines hover color of side nav!
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #d81b60;
 }
 
 nav ul.left {

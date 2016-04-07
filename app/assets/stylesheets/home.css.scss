@@ -51,9 +51,15 @@ footer.page-footer {
 
 .header.center.text-lighten-2.home {
   margin-top: 30px;
-  font-size: 120px;
+  font-size: 110px;
   color: white !important;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+}
+
+@media only screen and (max-width:800px){
+  .header.center.text-lighten-2.home{
+    font-size:80px !important;
+  }
 }
 
 @media only screen and (max-width:550px){

@@ -1,0 +1,45 @@
+<%= form_for(@rails_project) do |f| %>
+  <div class="row">
+    <div class="col s12 m6 offset-m3">
+      <% if @rails_project.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@rails_project.errors.count, "error") %> prohibited this blog from being saved:</h2>
+          <ul>
+          <% @rails_project.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+    
+      <div class="input-field">
+        <%= f.label :title %><br>
+        <%= f.text_field :title %>
+      </div>
+      
+      <div class="input-field">
+        <%= f.label :description %><br>
+        <%= f.text_area :description, class: "materialize-textarea" %>
+      </div>
+      
+      <div class="input-field">
+        <%= f.label :points %><br>
+        <%= f.text_area :points, class: "materialize-textarea" %>
+      </div>
+      
+      <div class="input-field">
+        <%= f.label :github %><br>
+        <%= f.text_field :github %>
+      </div>
+      
+      <div class="input-field">
+        <%= f.label :live_link %><br>
+        <%= f.text_field :live_link %>
+      </div>  
+      
+      <div class="actions center">
+        <%= f.submit class: "btn waves-effect waves-light" %>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -4,6 +4,10 @@ class RailsProjectsController < ApplicationController
   def new
     @rails_project = RailsProject.new
   end
+  
+  # GET /rails_projects/1/edit
+  def edit
+  end
 
 
   # POST /rails_projects
