@@ -70,3 +70,19 @@ pre {
   padding: 1em !important;
   color: #ec407a !important;
 }
+
+.responsive-img.z-depth-2.center{
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 991px){
+  .responsive-img.z-depth-2.center{
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .responsive-img.z-depth-2.center{
+    margin-top: 30px;
+  }
+}
