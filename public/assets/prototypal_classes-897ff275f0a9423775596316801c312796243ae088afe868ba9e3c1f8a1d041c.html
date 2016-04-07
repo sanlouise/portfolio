@@ -1,0 +1,124 @@
+<section class="blog-font blog-post">
+<p></p>
+
+<h4></h4>
+  
+<p>In my post on functional classes, we left off with the code below. In this post, we will
+try to make use of a prototype chain which could improve performance. The main goal of the 
+prototypal pattern is function sharing.</p>
+
+<p>library.js</p> 
+<pre><code>var Tiger = function(loc) {
+  obj.loc = {loc: loc};
+  extend(obj, Tiger.methods);
+  return obj;
+};
+
+Tiger.methods = {
+  move : function() {
+    this.loc++;
+	},
+  jump : function() { … },
+  run : function() { … }
+};
+</code></pre>
+
+<p>run.js</p>
+<pre><code>var bobo = Tiger(2);
+bobo.move();
+var nola = Tiger(7);
+nola.nove();
+</code></pre>
+
+<p>Any object can make its failed property lookups delegate to another (prototypal) object.</p>
+<p>With this in mind, we can choose to delete the <code>extend()</code> method which simply copies
+all properties it is linked to, to our objects. Instead we can delegate failed property lookups 
+with a prototype lookup! This can save us a lot of memory. </p> 
+
+<p>One problem with out current code is that we use an object literal to create our objects.
+This disallows us from defining the prototype of our object.</p>
+<pre><code>
+var obj = {loc: loc};
+</code></pre>
+
+<p>We'll need to rework our code a bit! Let's use <code>Object.create</code>, which does allow us to set
+a prototype for our object. Whatever is in the parenthesis is where our object delegates to.</p>
+
+<pre><code>
+var obj = Object.create(Tiger.methods)
+</code></pre>
+
+<p>Now we can also get rid off <code>extend(obj, Tiger.methods)</code>because our object 
+already has access to all properties of <code>Tiger.methods</code>. Because we are not 
+using an object literal anymore, we do need to make a reference to (loc) somewhere in our class. </p>
+
+<pre><code>var Tiger = function(loc) {
+  var obj = Object.create(Tiger.methods);
+  obj.loc  = loc
+  return obj;
+};
+
+Tiger.methods = {
+  move : function() {
+    this.loc++;
+	},
+  jump : function() { … },
+  run : function() { … }
+};
+</code></pre>
+
+<p>Our class now conforms to the prototypal pattern!</p>
+<h4>A quick sum-up:</h4>
+<p>So far, our delegation looks pretty simple! The code we have written includes a class 
+that allows us to make instances, a line of that function that generates that new instance, 
+a delegation from the object to a prototype, and some code that makes an object unique 
+from the other objects in the same class.</p>
+
+
+<h5 class= "center">Using <code>.prototype</code> </h5>
+
+<p>Because delegation is so common, there are targeted Javascript methods available that makes it easier for 
+programmers to use delegation repeatedly. In fact, whenever a function is created, it will have 
+a default object attached to it that can be used as a method container! The code below 
+reflects this, and you'll see that we have even been enabled to take out our object literal. For simplicity, 
+I've removed the run and jump methods. This does look quite simple, right? </p>
+
+<pre><code>var Tiger = function(loc) {
+  var obj = Object.create(Tiger.prototype);
+  obj.loc  = loc
+  return obj;
+};
+
+Tiger.prototype.move = function() {
+  this.loc++
+};
+</code></pre>
+
+<h5 class= "center">Now don't be confused!</h5>
+
+<p>There are no trippy, confusing rules that come with the <code>.prototype</code> 
+container! We only changed the name to match Javascript convention - there are no changes 
+to the in-memory model. Note that you do need the <code>Object.create</code> method in 
+your class to delegate to the prototype.</p>
+
+<h5 class= "center">Constructors</h5>
+<p>The <code>.prototype</code> objects come with comes with an extra convenience property, 
+<code>.constructor</code> that points back to the function it came attached to. 
+Using constructors is handy when you want to figure out which function created a specific
+object. We can write constructor methods like so:</p>
+
+<pre><code>console.log(Tiger.prototype.constructor);</code></pre>
+
+<p>In this example, the constructor points to the <code>.move</code> function. </p>
+
+<h5 class= "center">instanceOf</h5>
+
+<p>Let's look at this piece of code:</p>
+
+<pre><code>console.log(bobo instanceOf Tiger);</code></pre>
+
+<p>Here, the boolean <code>instanceOf</code> checks if the right operands prototype object 
+can be found anywhere in the left operands prototype chain. In our case, this will evaluate to true.
+</p>
+  
+</section>
