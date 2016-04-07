@@ -24,6 +24,10 @@
     </div>
   </div>
   
+  <div class="col s12 m6 offset-m3 center">
+    <%= will_paginate %>
+  </div>
+  
   <!--Cards-->
   <% @blogs.sort_by{|item| item.created_at}.reverse.each do |blog| %>
     <div class="row">

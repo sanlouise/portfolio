@@ -22,6 +22,8 @@ gem 'bcrypt'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'will_paginate'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

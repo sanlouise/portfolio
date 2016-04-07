@@ -12,10 +12,8 @@ class RailsProjectsController < ApplicationController
   end
   
   def index
-    @rails_projects = RailsProject.all
+    @rails_projects = RailsProject.paginate(page: params[:page], per_page: 4)
   end
-  
-
 
   # POST /rails_projects
   # POST /rails_projects.json
