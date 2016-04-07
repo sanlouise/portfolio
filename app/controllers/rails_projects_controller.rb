@@ -8,6 +8,11 @@ class RailsProjectsController < ApplicationController
   # GET /rails_projects/1/edit
   def edit
   end
+  
+  def index
+    @rails_projects = RailsProject.all
+  end
+  
 
 
   # POST /rails_projects
@@ -17,7 +22,7 @@ class RailsProjectsController < ApplicationController
 
     respond_to do |format|
       if @rails_project.save
-        format.html { redirect_to @rails_project, notice: 'Rails project was successfully created.' }
+        format.html { redirect_to rails_projects_path, notice: 'Rails project was successfully created.' }
         format.json { render :show, status: :created, location: @rails_project }
       else
         format.html { render :new }
