@@ -1,0 +1,78 @@
+<section class="blog-font blog-post">
+<p></p>
+
+<h4></h4>
+  
+<p>Pseudoclassical code is just another layer of convenience on top of the prototypal pattern.
+The difference between pseudoclassical and prototypal code lies with optimization.</p>
+<p>In this post, we will be refactoring the code from my previous blog post on 
+prototypal classes. This is what we have so far: </p>
+
+<p>library.js</p> 
+<pre><code>var Tiger = function(loc) {
+  var obj = Object.create(Tiger.prototype);
+  obj.loc  = loc
+  return obj;
+};
+
+Tiger.prototype.move = function() {
+  this.loc++
+};
+</code></pre>
+
+<p>run.js</p>
+<pre><code>var bobo = Tiger(2);
+bobo.move();
+var nola = Tiger(7);
+nola.move();
+</code></pre>
+
+<p>With the current code, there would still be a lot of duplication of we were to 
+make a lot of classes. Some of the code above will likely show up in new classes.
+Specifically, we can expect <code>var obj = Object.create(Tiger.prototype);</code> and 
+<code>return obj</code> to appear in all of our classes. Using the pseudoclassical 
+pattern, we can eliminate such unnecessary repetition. </p> 
+
+<h4>The 'new' keyword</h4>
+<p>Let's modify our run.js to match this code:</p>
+
+<pre><code>var bobo = new Tiger(2);
+bobo.move();
+var nola = new Tiger(7);
+nola.move();
+</code></pre>
+
+<p>When putting the keyword <code>new</code> in front of a class name, our code will be 
+executed in a special mode: the constructor mode.</p>
+
+<h5>The Constructor Mode</h5>
+
+<p>The constructor automatically takes care of code that we otherwise would have to repeat.
+Precisely, it inserts invisible lines of code onto the beginning and end of a class.</p>
+
+<p>At the beginning it creates an object that degelates to Tiger.prototype:</p>
+<pre><code>this = Object.create(Tiger.prototype);</code></pre>
+<p>At the end:</p>
+<pre><code>return this;</code></pre>
+
+<p> Really, although you won't see the actual code on your screen, it sure is run - but note, 
+only when you invoke a function with the <code>new</code> keyword!</p>
+
+<p>Now we can refactor our code so we get rid of the duplication the constructor causes.</p>
+
+<pre><code>var Tiger = function(loc){
+  this.loc = loc;
+};
+
+Tiger.prototype.move = function() {
+  this.loc++
+};
+</code></pre>
+
+<h5>Unique versus shared code</h5>
+
+<p>It is important to understand the difference between the functions of the class and prototype.
+The class embodies code that is unique to single instances, whereas the prototype really only exists 
+to keep shared code that multiple instances use in one place. </p>
+  
+</section>

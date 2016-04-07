@@ -1,5 +1,7 @@
 class IosProjectsController < ApplicationController
 
+  before_action :require_user, except: [:index]
+
   # GET /ios_projects/new
   def new
     @ios_project = IosProject.new
