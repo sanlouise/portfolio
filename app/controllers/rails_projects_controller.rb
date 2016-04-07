@@ -12,7 +12,7 @@ class RailsProjectsController < ApplicationController
   end
   
   def index
-    @rails_projects = RailsProject.order('title ASC').paginate(page: params[:page], per_page: 4)
+    @rails_projects = RailsProject.order('title ASC').paginate(page: params[:page], per_page: 20)
   end
 
   # POST /rails_projects
