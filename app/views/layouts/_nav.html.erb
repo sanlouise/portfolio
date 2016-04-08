@@ -1,37 +1,37 @@
 <header>
   <nav>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
-      
-      <% if current_user %>
-        <ul class="right hide-on-med-and-down">
-            <li>Admin</li>
-        </ul>
-      <% end %>
-      
+
       <!-- Dropdown Structure -->
       <ul id="dropdown1" class="dropdown-content">
         <li><%= link_to "Ruby on Rails", rails_projects_path %></li>
         <li><%= link_to "iOS", ios_projects_path %></li>
       </ul>
+      
       <nav>
         <div class="nav-wrapper pink darken-1">
           <a href="/" class="brand-logo center">Sandra Hallie</a>
           <ul class="right hide-on-med-and-down">
-            <li><%= link_to "Blog", blogs_path %></li>
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Portfolio</a></li>
+            <li><%= link_to "Blog", blogs_path %></li>
+            <li><%= link_to "Contact", new_contact_path %></li>
+            
+            <% if current_user %>
+              <ul class="right hide-on-med-and-down">
+                <li>Admin</li>
+              </ul>
+            <% end %>
+            
           </ul>
         </div>
       </nav>
-       
-      
-    
-      
+
       <ul class="side-nav" id="mobile-demo">
         <li><%= link_to "Rails Projects", rails_projects_path %></li>
         <li><%= link_to "iOS Projects", ios_projects_path %></li>
         <li><%= link_to "Blog", blogs_path %></li>
+        <li><%= link_to "Contact", new_contact_path %></li>
       </ul>
-
     </div>
   </nav>
 </header>
