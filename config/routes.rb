@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   
   resources :rails_projects
   resources :blogs
+  resources :contacts
+  
   root 'pages#home'
   
   get '/rails-projects', to: 'rails_projects#index'
