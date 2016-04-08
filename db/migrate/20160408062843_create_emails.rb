@@ -1,6 +1,5 @@
-class CreateContacts < ActiveRecord::Migration
+class CreateEmails < ActiveRecord::Migration
   def change
-  
     create_table :contacts do |t|
       t.string :name
       t.string :email
@@ -10,4 +9,3 @@ class CreateContacts < ActiveRecord::Migration
     end
   end
 end
-

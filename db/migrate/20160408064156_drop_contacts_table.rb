@@ -1,9 +1,5 @@
 class DropContactsTable < ActiveRecord::Migration
-  def up
+  def change
     drop_table :contacts
-  end
-
-  def down
-    raise ActiveRecord::IrreversibleMigration
   end
 end
