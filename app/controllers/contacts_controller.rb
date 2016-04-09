@@ -14,9 +14,11 @@ class ContactsController < ApplicationController
       
       ContactMailer.contact_email(name, email, comments).deliver
 
-      redirect_to new_contact_path, notice: "Message sent."
+      redirect_to new_contact_path, notice: "Your message was sent successfully! 
+      I'll get back to you as soon as possible."
     else
-      redirect_to new_contact_path, notice: "Error occured."
+      redirect_to new_contact_path, notice: "Oops, an error occured. Are you sure you 
+      did not leave a field blank?"
     end
     
   end
