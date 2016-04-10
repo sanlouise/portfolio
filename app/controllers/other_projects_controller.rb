@@ -1,5 +1,6 @@
 class OtherProjectsController < ApplicationController
-  before_action :set_other_project, only: [:show, :edit, :update, :destroy]
+  
+  before_action :require_user, except: [:index]
 
   # GET /other_projects
   # GET /other_projects.json

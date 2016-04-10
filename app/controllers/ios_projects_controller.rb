@@ -15,7 +15,7 @@ class IosProjectsController < ApplicationController
 
     respond_to do |format|
       if @ios_project.save
-        format.html { redirect_to @ios_project, notice: 'Ios project was successfully created.' }
+        format.html { redirect_to @ios_project, notice: 'iOS project was successfully created.' }
         format.json { render :show, status: :created, location: @ios_project }
       else
         format.html { render :new }
