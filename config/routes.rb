@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :other_projects
   resources :ios_projects
   resources :rails_projects
   resources :blogs

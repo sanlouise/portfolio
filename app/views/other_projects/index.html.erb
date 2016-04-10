@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Other Projects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Points</th>
+      <th>Github</th>
+      <th>Live link</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @other_projects.each do |other_project| %>
+      <tr>
+        <td><%= other_project.title %></td>
+        <td><%= other_project.description %></td>
+        <td><%= other_project.points %></td>
+        <td><%= other_project.github %></td>
+        <td><%= other_project.live_link %></td>
+        <td><%= other_project.image %></td>
+        <td><%= link_to 'Show', other_project %></td>
+        <td><%= link_to 'Edit', edit_other_project_path(other_project) %></td>
+        <td><%= link_to 'Destroy', other_project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Other project', new_other_project_path %>
