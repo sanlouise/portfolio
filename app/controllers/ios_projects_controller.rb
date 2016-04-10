@@ -6,7 +6,13 @@ class IosProjectsController < ApplicationController
   def new
     @ios_project = IosProject.new
   end
-
+  
+  def index
+    @ios_projects = IosProject.all
+  end
+  
+  def edit
+  end
 
   # POST /ios_projects
   # POST /ios_projects.json
@@ -15,11 +21,11 @@ class IosProjectsController < ApplicationController
 
     respond_to do |format|
       if @ios_project.save
-        format.html { redirect_to @ios_project, notice: 'iOS project was successfully created.' }
+        format.html { redirect_to ios_projects_path, notice: 'iOS project was successfully created.' }
         format.json { render :show, status: :created, location: @ios_project }
       else
         format.html { render :new }
-        format.json { render json: @ios_project.errors, status: :unprocessable_entity }
+        format.json { render json: ios_projects_path.errors, status: :unprocessable_entity }
       end
     end
   end
