@@ -29,7 +29,7 @@ class OtherProjectsController < ApplicationController
 
     respond_to do |format|
       if @other_project.save
-        format.html { redirect_to @other_project, notice: 'Other project was successfully created.' }
+        format.html { redirect_to other_projects_path, notice: 'Project was successfully created.' }
         format.json { render :show, status: :created, location: @other_project }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class OtherProjectsController < ApplicationController
   def update
     respond_to do |format|
       if @other_project.update(other_project_params)
-        format.html { redirect_to @other_project, notice: 'Other project was successfully updated.' }
+        format.html { redirect_to other_projects_path, notice: 'Other project was successfully updated.' }
         format.json { render :show, status: :ok, location: @other_project }
       else
         format.html { render :edit }
