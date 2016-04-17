@@ -34,7 +34,7 @@
                     <!--Project Title-->
                     <h3 class="center"><%= project.title %></h3>
                     <!--Project Description-->
-                    <p><%= project.description %></p>
+                    <p><%= project.description.html_safe %></p>
                     <!--Project Points-->
                     <ul class="portfolio">
                       <%= project.points.html_safe %>
