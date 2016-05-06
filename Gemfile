@@ -21,8 +21,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
-gem 'will_paginate'
+# Use pagination with materialize styling
+gem 'will_paginate-materialize'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
