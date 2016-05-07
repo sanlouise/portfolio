@@ -43,15 +43,6 @@ i.fa.fa-github.fa-2x{
 	min-height: 99%;
 }
 
-.footer{
-	height: 50px; 
-	background: blue;
-	position: absolute !important; 
-	bottom: 3; 
-	width: inherit;
-	text-align: center;
-}
-
 .btn-large.waves-effect.waves-light.pink.darken-1{
     margin-bottom:50px;
 }
@@ -98,4 +89,14 @@ pre {
 
 .pagination a li.active {
   color: #fff;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }

@@ -3,18 +3,17 @@
 <head>
 	<%= render 'layouts/head' %>
 </head>
-<body>
-	<div class="wrapper">
+<main>
+	<body>
 	  <div id="content">
 	    <%= render 'layouts/nav' %>
 			<%= render 'layouts/messages' %>
 	    <%= yield %>
 		 </div>
-	
-		<div id="footer">
-			<%= render 'layouts/footer' %>
-		</div>
+</main>		
+	<div id="footer">
+		<%= render 'layouts/footer' %>
 	</div>
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>  
-</body>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>  
+	</body>
 </html>
