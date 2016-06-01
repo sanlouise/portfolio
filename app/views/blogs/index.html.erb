@@ -12,11 +12,9 @@
           <div class="card-title">
             Welcome!
           </div>
-          <p>
-          I hope that my posts will teach you something new or
-          clear up confusing topics. During my programming learning process, I've come to understand that 
-          explaining code to others helps me tremendously in my personal understanding of concepts
-          and patterns.</p>
+            <p>
+            Explaining code to others helps me tremendously in my personal understanding of concepts
+            and patterns. I also keep this blog as a personal reference. </p>
             
             <p>Feel free to reach out for any suggestions to my posts! I am still learning.</p>
 
@@ -36,6 +34,8 @@
             <%= link_to image_tag(blog.image), blog_path(blog) if blog.image %>
           </div>
           <div class="card-content white-text center">
+            <span class="blog-topic"><%= blog.topic %></span>
+            </br>
             <span class="card-title">
               <!--Title-->
               <%= link_to blog.title, blog_path(blog) %>
