@@ -8,6 +8,26 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.paginate(page: params[:page], per_page: 20)
   end
+  
+  def javascript
+    @blogs = Blog.javascript
+    render action: :index
+  end 
+
+  def ruby_on_rails
+    @blogs = Blog.ruby_on_rails
+    render action: :index
+  end
+  
+  def personal_development
+    @blogs = Blog.personal_development
+    render action: :index
+  end 
+
+  def other
+    @blogs = Blog.other
+    render action: :index
+  end
 
   # GET /blogs/1
   # GET /blogs/1.json

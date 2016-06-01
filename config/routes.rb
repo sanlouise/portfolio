@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :other_projects
   resources :ios_projects
   resources :rails_projects
-  resources :blogs
   resources :contacts
   
   root 'pages#home'
@@ -17,5 +16,14 @@ Rails.application.routes.draw do
   get '/login', to: 'logins#new'
   post '/login', to: 'logins#create'
   get '/logout', to: 'logins#destroy'
+  
+  resources :blogs do
+    collection do
+      get :javascript
+      get :ruby_on_rails
+      get :personal_development
+      get :other
+    end
+  end
   
 end
