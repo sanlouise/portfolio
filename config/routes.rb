@@ -19,10 +19,12 @@ Rails.application.routes.draw do
   
   resources :blogs do
     collection do
-      get :javascript
-      get :ruby_on_rails
-      get :personal_development
-      get :other
+
+      post :javascript
+      post :ruby_on_rails
+      post :personal_development
+      post :other
+      
     end
   end
   
