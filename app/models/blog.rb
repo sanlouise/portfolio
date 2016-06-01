@@ -7,5 +7,5 @@ class Blog < ActiveRecord::Base
   scope :ruby_on_rails, -> { where(topic: 'Ruby on Rails') }
   scope :personal_development, -> { where(topic: 'Personal Development') }
   scope :other, -> { where(topic: 'Other') }
-
+  
 end

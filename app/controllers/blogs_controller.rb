@@ -7,6 +7,7 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.all
     @blogs = Blog.paginate(page: params[:page], per_page: 20)
+
   end
   
   def javascript
