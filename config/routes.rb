@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   get '/ios-projects', to: 'pages#ios_projects'
 
   get '/about', to: 'pages#about' 
-  get '/blog', to: 'pages#blog' 
   
   get '/login', to: 'logins#new'
   post '/login', to: 'logins#create'
