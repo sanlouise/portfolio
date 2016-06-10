@@ -29,7 +29,7 @@
   </div>
   
   <div class="col s12 center pagination">
-    <%= will_paginate @blogss %>
+    <%= will_paginate @blogs %>
   </div>
   
   <!--Cards-->
@@ -50,6 +50,9 @@
             </span>
             <!--Date-->
             <p><%= link_to blog.created_at.strftime("%B %e, %Y"), blog_path(blog) %></p>
+           <div class="blog-body">
+            <%= truncate(blog.body, length: 300) %>
+          </div>
           </div>
         </div>
       </div>
@@ -57,7 +60,7 @@
   <% end %>
   
   <div class="col s12 center pagination">
-    <%= will_paginate @blogss %>
+    <%= will_paginate @blogs %>
   </div>
   
 </section>
