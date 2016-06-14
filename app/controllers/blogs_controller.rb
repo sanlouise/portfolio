@@ -24,6 +24,11 @@ class BlogsController < ApplicationController
     @blogs = Blog.personal_development
     render action: :index
   end 
+  
+  def cs_fundamentals
+    @blogs = Blog.cs_fundamentals
+    render action: :index
+  end
 
   def other
     @blogs = Blog.other

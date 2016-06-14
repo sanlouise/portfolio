@@ -6,6 +6,7 @@ class Blog < ActiveRecord::Base
   scope :javascript, -> { where(topic: 'Javascript') }
   scope :ruby_on_rails, -> { where(topic: 'Ruby on Rails') }
   scope :personal_development, -> { where(topic: 'Personal Development') }
+  scope :cs_fundamentals, -> { where(topic: 'CS Fundamentals') }
   scope :other, -> { where(topic: 'Other') }
   
 end
