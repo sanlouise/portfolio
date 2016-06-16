@@ -2,8 +2,10 @@
   <p id="notice"><%= notice %></p>
 </h5>
 
+
+
 <section class="blog-font">
-  <h1 class="center">Blog </h1>
+  <h1 class="center">Blog - Search Results</h1>
   <!--Intro Card-->
   <div class="row">
     <div class="col s12 m6 offset-m3">
@@ -30,10 +32,6 @@
     </div>
   </div>
   
-  <div class="col s12 center pagination">
-    <%= will_paginate @blogs %>
-  </div>
-  
   <!--Cards-->
   <% @blogs.sort_by{|item| item.created_at}.reverse.each do |blog| %>
     <div class="row">
@@ -57,9 +55,11 @@
       </div>
     </div>
   <% end %>
-  
-  <div class="col s12 center pagination">
-    <%= will_paginate @blogs %>
+
+  <div class="row">
+    <div class="col-md-2 center">
+      <%= link_to "Back To All POsts", blogs_path, class: "waves-effect waves-light btn" %>
+    </div>
   </div>
-  
+
 </section>

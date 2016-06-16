@@ -45,6 +45,7 @@ class BlogsController < ApplicationController
   def new
     @blog = Blog.new
   end
+  
 
   # GET /blogs/1/edit
   def edit
@@ -87,6 +88,20 @@ class BlogsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+  
+  
+  def search
+    if params[:blog]
+      @blog ||= Stock.new_from_lookup(params[:stock])
+    end
+    
+    if @blog
+      # render json: @stock
+      render partial: 'lookup'
+    else
+      render status: :not_found, nothing: true
     end
   end
 

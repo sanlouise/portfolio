@@ -1,5 +1,7 @@
 class Blog < ActiveRecord::Base
-
+  
+  belongs_to :user
+  
   validates :title, presence: true, length: { minimum: 2}
   validates :body, presence: true, length: { minimum: 2 }
   
@@ -8,5 +10,10 @@ class Blog < ActiveRecord::Base
   scope :personal_development, -> { where(topic: 'Personal Development') }
   scope :cs_fundamentals, -> { where(topic: 'CS Fundamentals') }
   scope :other, -> { where(topic: 'Other') }
+  
+  def self.search(search)
+    where("title LIKE ? OR body LIKE ?", "%#{search}%", "%#{search}%")
+  end
+  
   
 end

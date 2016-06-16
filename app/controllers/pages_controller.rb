@@ -18,6 +18,10 @@ class PagesController < ApplicationController
   def contact
   end 
   
+  def search
+    @blogs = Blog.search(params[:search_blogs]).order("created_at DESC")
+  end
+  
   def ios_projects
     @ios_projects = IosProject.all 
   end

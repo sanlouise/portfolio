@@ -22,8 +22,15 @@ Rails.application.routes.draw do
       post :javascript
       post :ruby_on_rails
       post :personal_development
+      post :cs_fundamentals
       post :other
       
+    end
+  end
+  
+  resource :pages do
+    collection do
+      post :search, to: 'pages#search'
     end
   end
   

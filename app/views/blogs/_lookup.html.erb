@@ -1,0 +1,14 @@
+<%= form_tag(search_pages_path, role: "search") do %>
+  <div class="form-group row no-padding text-center col-md-12">
+    
+    <div class="col-md-10">
+      <%= text_field_tag :search_blogs, nil, placeholder: "Search blog posts", autofocus: true,
+                                                        class: 'form-control search-box input-lg' %>
+    </div>
+    
+    <div class="col-md-2 center">
+      <%= submit_tag "Search Posts", class: 'btn btn-lg btn-success' %>
+    </div>
+    
+  </div>
+<% end %>
