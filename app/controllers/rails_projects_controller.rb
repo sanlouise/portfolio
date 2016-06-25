@@ -9,6 +9,8 @@ class RailsProjectsController < ApplicationController
   
   # GET /rails_projects/1/edit
   def edit
+    @rails_project = RailsProject.find(params[:id])
+    respond_to { |format| format.html }
   end
   
   def index
@@ -30,6 +32,20 @@ class RailsProjectsController < ApplicationController
       end
     end
   end
+  
+  def update
+    @rails_project = RailsProject.find(params[:id])
+    
+     if @rails_project.update_attributes(rails_project_params)
+       # If update succeeds, redirect to the list action
+       flash[:notice] = "Project updated."
+       redirect_to :action => 'index', :id => @rails_project.id
+     else
+       # If update fails, redisplay the form so user can fix problems
+       render :action => 'edit'
+     end
+  end
+  
 
   private
 
