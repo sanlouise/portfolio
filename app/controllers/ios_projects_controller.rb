@@ -12,6 +12,8 @@ class IosProjectsController < ApplicationController
   end
   
   def edit
+    @ios_project = IosProject.find(params[:id])
+    respond_to { |format| format.html }
   end
 
   # POST /ios_projects
@@ -30,6 +32,18 @@ class IosProjectsController < ApplicationController
     end
   end
 
+  def update
+    @ios_project = OtherProject.find(params[:id])
+    
+     if @ios_project.update_attributes(ios_project_params)
+       # If update succeeds, redirect to the list action
+       flash[:notice] = "Project updated."
+       redirect_to :action => 'index', :id => @ios_project.id
+     else
+       # If update fails, redisplay the form so user can fix problems
+       render :action => 'edit'
+     end
+  end
 
 
   private

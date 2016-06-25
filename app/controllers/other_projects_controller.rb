@@ -8,11 +8,6 @@ class OtherProjectsController < ApplicationController
     @other_projects = OtherProject.order('title ASC').paginate(page: params[:page], per_page: 4)
   end
 
-  # GET /other_projects/1
-  # GET /other_projects/1.json
-  def show
-  end
-
   # GET /other_projects/new
   def new
     @other_project = OtherProject.new
@@ -20,6 +15,8 @@ class OtherProjectsController < ApplicationController
 
   # GET /other_projects/1/edit
   def edit
+    @other_project = OtherProject.find(params[:id])
+    respond_to { |format| format.html }
   end
 
   # POST /other_projects
@@ -41,15 +38,16 @@ class OtherProjectsController < ApplicationController
   # PATCH/PUT /other_projects/1
   # PATCH/PUT /other_projects/1.json
   def update
-    respond_to do |format|
-      if @other_project.update(other_project_params)
-        format.html { redirect_to other_projects_path, notice: 'Other project was successfully updated.' }
-        format.json { render :show, status: :ok, location: @other_project }
-      else
-        format.html { render :edit }
-        format.json { render json: @other_project.errors, status: :unprocessable_entity }
-      end
-    end
+    @other_project = OtherProject.find(params[:id])
+    
+     if @other_project.update_attributes(other_project_params)
+       # If update succeeds, redirect to the list action
+       flash[:notice] = "Project updated."
+       redirect_to :action => 'index', :id => @other_project.id
+     else
+       # If update fails, redisplay the form so user can fix problems
+       render :action => 'edit'
+     end
   end
 
   # DELETE /other_projects/1
