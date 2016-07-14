@@ -18,3 +18,20 @@ p.center {
    display: inline-block;
    margin-right: 5px;
 }
+
+.blog-bg {
+  background-image: asset-url('tulips_s.jpg');
+  background-size: 100%;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  opacity: 1;
+  
+}
+
+.white-bg {
+  background-color: white;
+}
