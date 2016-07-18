@@ -11,6 +11,8 @@ class Blog < ActiveRecord::Base
   scope :cs_fundamentals, -> { where(topic: 'CS Fundamentals') }
   scope :other, -> { where(topic: 'Other') }
   
+  default_scope { order(created_at: :desc) }
+  
   def self.search(search)
     where("title LIKE ? OR body LIKE ?", "%#{search}%", "%#{search}%")
   end
