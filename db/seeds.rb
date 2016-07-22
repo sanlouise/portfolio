@@ -322,7 +322,7 @@ Project.create!(
 <li>Used AVAudioRecorder to record audio.</li>
 <li>Implemented UINavigationControllers.</li>",
   github: "https://github.com/sanlouise/pitch-perfect",
-  live_link: "",
+  live_link: "https://appetize.io/embed/fkk9z7ruhrhdhzmgd237vtgv98?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
   image: "",
   project_type: "iOS"
 )
@@ -334,7 +334,7 @@ Project.create!(
   points: "<li>Created with Swift 2.0 using XCode for iOS 9.</li>
 <li>Used SpriteKit for game development.</li>",
   github: "https://github.com/sanlouise/game",
-  live_link: "",
+  live_link: "https://appetize.io/embed/qbhqhp39gapbhqeur8edtbnyxg?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
   image: "",
   project_type: "iOS"
 )
@@ -348,7 +348,7 @@ Project.create!(
 <li>Manipulated third-party weather content.</li>
 ",
   github: "https://github.com/sanlouise/quickweather",
-  live_link: "",
+  live_link: "https://appetize.io/embed/vrz0ut00jya8fy4mgpgbrb76v0?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
   image: "",
   project_type: "iOS"
 )
@@ -362,7 +362,7 @@ Project.create!(
 <li>Saved Memes are showed in a UITableView and a UICollectionView.</li>
 <li>Ensured proper formatting of layout in both Portrait and Landscape mode.</li>",
   github: "https://github.com/sanlouise/Meme-app",
-  live_link: "",
+  live_link: "https://appetize.io/embed/re0xmchwvpa4w0375ye7jh14dm?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
   image: "",
   project_type: "iOS"
 )
@@ -375,7 +375,7 @@ Project.create!(
 <li>Users can easily add tasks to their to-do list.</li>
 <li>To-do list items are presented in a Table View Controller.</li>",
   github: "https://github.com/sanlouise/to-do-list",
-  live_link: "",
+  live_link: "https://appetize.io/embed/k5meyqxdtjveqkmn2h46jegfcc?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
   image: "",
   project_type: "iOS"
 )
