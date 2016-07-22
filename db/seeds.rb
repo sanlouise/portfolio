@@ -4,7 +4,6 @@
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -12,7 +11,14 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
+  topic: ""
+  
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
   topic: ""
 )
 
@@ -20,7 +26,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -28,7 +33,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -36,7 +40,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -44,7 +47,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -52,7 +54,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -60,7 +61,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -68,7 +68,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -76,7 +75,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -84,7 +82,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -92,7 +89,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -100,7 +96,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -108,7 +103,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -116,7 +110,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -124,7 +117,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -132,7 +124,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -140,7 +131,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -148,7 +138,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -156,7 +145,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -164,7 +152,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -172,7 +159,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -180,7 +166,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -188,7 +173,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -196,7 +180,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -204,7 +187,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -212,7 +194,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -220,7 +201,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -228,7 +208,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -236,7 +215,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -244,7 +222,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -252,7 +229,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -260,7 +236,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -268,7 +243,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -276,7 +250,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -284,7 +257,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -292,7 +264,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -300,7 +271,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -308,7 +278,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -316,7 +285,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -324,7 +292,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -332,7 +299,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
   topic: ""
 )
 
@@ -340,15 +306,6 @@ Blog.create!(
 Blog.create!(
   title: "",
   body: "",
-  image: "",
-  topic: ""
-)
-
-# Blog Title
-Blog.create!(
-  title: "",
-  body: "",
-  image: "",
   topic: ""
 )
 
