@@ -1,7 +1,533 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# BLOGS
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+  
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+# Blog Title
+Blog.create!(
+  title: "",
+  body: "",
+  topic: ""
+)
+
+
+# -----------------------------------------
+# IOS PROJECTS
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "iOS"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "iOS"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "iOS"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "iOS"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "iOS"
+)
+
+
+# --------------------------------------
+# RAILS PROJECTS
+
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "Ruby on Rails"
+)
+
+
+
+# -------------------------------------
+# JAVASCRIPT PROJECTS
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "JavaScript"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "JavaScript"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "JavaScript"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "JavaScript"
+)
+
+# Project title
+Project.create!(
+  title: "",
+  description: "",
+  points: "",
+  github: "",
+  live_link: "",
+  image: "",
+  project_type: "JavaScript"
+)

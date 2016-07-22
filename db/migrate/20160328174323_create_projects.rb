@@ -1,12 +1,13 @@
-class CreateIosProjects < ActiveRecord::Migration
+class CreateProjects < ActiveRecord::Migration
   def change
-    create_table :ios_projects do |t|
+    create_table :projects do |t|
       t.string :title
       t.string :description
       t.string :points
       t.string :github
       t.string :live_link
       t.string :image
+      t.string :project_type
 
       t.timestamps null: false
     end
