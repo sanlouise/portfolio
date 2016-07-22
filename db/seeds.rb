@@ -398,7 +398,7 @@ Project.create!(
 <li>Deployed application using Heroku.</li>",
   github: "https://github.com/sanlouise/travel_railsblog",
   live_link: "http://globetrotter.herokuapp.com/",
-  image: "",
+  image: "globetrotter_s.jpg",
   project_type: "Ruby on Rails"
 )
 
@@ -414,7 +414,7 @@ Project.create!(
 <li>Connected application to Amazon Web Services (AWS S3) while using paperclip.</li>",
   github: "https://github.com/sanlouise/bluedives",
   live_link: "http://divebuddies.herokuapp.com/",
-  image: "",
+  image: "Divebuddies_s.jpg",
   project_type: "Ruby on Rails"
 )
 
@@ -430,7 +430,7 @@ Project.create!(
 <li>Deployed application using Heroku and set up application to AWS S3.</li>",
   github: "https://github.com/sanlouise/my_recipes",
   live_link: "http://mrsgreen.herokuapp.com/",
-  image: "",
+  image: "mrsgreen_s.jpg",
   project_type: "Ruby on Rails"
 )
 
@@ -446,7 +446,7 @@ Project.create!(
 <li>Deployed application using Heroku with PostgreSQL.</li>",
   github: "https://github.com/sanlouise/stocktracker",
   live_link: "http://socialstocktracker.herokuapp.com/",
-  image: "",
+  image: "Stocktracker_s.jpg",
   project_type: "Ruby on Rails"
 )
 
@@ -463,7 +463,7 @@ Project.create!(
 <li>Designed UI of the pages using custom CSS, Twitter Bootstrap, and JavaScript/JQuery.</li>",
   github: "https://github.com/sanlouise/projectmanagement",
   live_link: "https://projectmgt-app.herokuapp.com/",
-  image: "",
+  image: "project_s.jpg",
   project_type: "Ruby on Rails"
 )
 
@@ -477,13 +477,13 @@ Project.create!(
 <li>Deployed application using Heroku.</li>",
   github: "https://github.com/sanlouise/bddblog",
   live_link: "https://bdd-bloggy.herokuapp.com/",
-  image: "",
+  image: "bdd_s.jpg",
   project_type: "Ruby on Rails"
 )
 
 # Project title
 Project.create!(
-  title: "The Athletes Criv",
+  title: "The Athletes Crib",
   description: "Users can keep track of their workouts in the lounge and compare their activity with friends and family.",
   points: "<li>Used RSpec, Capybara and Guard gem for Behavior Driven Development.</li>
 <li>All features are built on basis of automated testing specs.</li>
@@ -493,7 +493,7 @@ Project.create!(
 <li>Deployed application using Heroku.</li>",
   github: "https://github.com/sanlouise/rspec-workouts",
   live_link: "https://athletes-crib.herokuapp.com/",
-  image: "",
+  image: "athletes_crib_s.jpg",
   project_type: "Ruby on Rails"
 )
 
@@ -508,7 +508,7 @@ Project.create!(
 <li>Deployed application using Heroku with PostgreSQL.</li>",
   github: "https://github.com/sanlouise/portfolio",
   live_link: "https://www.sandrahallie.com",
-  image: "",
+  image: "portfolio_s.png",
   project_type: "Ruby on Rails"
 )
 
@@ -523,7 +523,7 @@ Project.create!(
 <li>Deployed application using Heroku with PostgreSQL.</li>",
   github: "https://github.com/sanlouise/conscioux",
   live_link: "http://veryconscioux.herokuapp.com/",
-  image: "",
+  image: "conscioux_s.jpg",
   project_type: "Ruby on Rails"
 )
 
@@ -542,7 +542,7 @@ Project.create!(
 <li>Learned error handling with AJAX and JSONP.</li>",
   github: "https://github.com/sanlouise/ajax-project",
   live_link: "",
-  image: "",
+  image: "city_search_s.jpg",
   project_type: "JavaScript"
 )
 
@@ -558,7 +558,7 @@ Project.create!(
 <li>Deployed application using Heroku.</li>",
   github: "https://github.com/sanlouise/node-todo-api",
   live_link: "https://node-todoapi.herokuapp.com",
-  image: "",
+  image: "nodejs.jpg",
   project_type: "JavaScript"
 )
 
@@ -573,7 +573,7 @@ Project.create!(
 <li>Deployed application using Heroku.</li>",
   github: "https://github.com/sanlouise/sockets",
   live_link: "https://nodejs-chatty.herokuapp.com",
-  image: "",
+  image: "chatty_s.jpg",
   project_type: "JavaScript"
 )
 
@@ -587,11 +587,11 @@ Project.create!(
 <li>Used Google Maps API for location rendering.</li>
 <li>Used Sparklines API for charts.</li>",
   github: "https://github.com/sanlouise/react-redux-app/",
-  live_link: "",
+  live_link: "weather_api_s.jpg",
   image: "",
   project_type: "JavaScript"
-)
 
+)
 # Project title
 Project.create!(
   title: "Rails-React Expense Tracker",
@@ -601,6 +601,6 @@ Project.create!(
 <li>Used bootstrap and custom CSS for styling.</li>",
   github: "https://github.com/sanlouise/railsreact-expense-tracker",
   live_link: "",
-  image: "",
+  image: "expense_tracker_s.jpg",
   project_type: "JavaScript"
 )
