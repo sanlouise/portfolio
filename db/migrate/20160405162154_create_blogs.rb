@@ -4,6 +4,7 @@ class CreateBlogs < ActiveRecord::Migration
       t.string :title
       t.string :body
       t.string :image
+      t.string :topic
 
       t.timestamps null: false
     end
