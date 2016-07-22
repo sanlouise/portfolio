@@ -63,20 +63,6 @@ class BlogsController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
-  
-  def search
-    if params[:blog]
-      @blog ||= Stock.new_from_lookup(params[:stock])
-    end
-    
-    if @blog
-      # render json: @stock
-      render partial: 'lookup'
-    else
-      render status: :not_found, nothing: true
-    end
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
