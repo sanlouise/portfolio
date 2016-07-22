@@ -11,15 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160601060442) do
+ActiveRecord::Schema.define(version: 20160408064736) do
 
   create_table "blogs", force: :cascade do |t|
     t.string   "title"
     t.string   "body"
-    t.string   "image"
+    t.string   "topic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "topic"
   end
 
   create_table "contacts", force: :cascade do |t|
@@ -30,37 +29,16 @@ ActiveRecord::Schema.define(version: 20160601060442) do
     t.datetime "updated_at"
   end
 
-  create_table "ios_projects", force: :cascade do |t|
+  create_table "projects", force: :cascade do |t|
     t.string   "title"
     t.string   "description"
     t.string   "points"
     t.string   "github"
     t.string   "live_link"
     t.string   "image"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "other_projects", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.string   "points"
-    t.string   "github"
-    t.string   "live_link"
-    t.string   "image"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "rails_projects", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.string   "points"
-    t.string   "github"
-    t.string   "live_link"
-    t.string   "image"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "project_type"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "users", force: :cascade do |t|
