@@ -508,7 +508,7 @@ Project.create!(
 <li>Deployed application using Heroku with PostgreSQL.</li>",
   github: "https://github.com/sanlouise/portfolio",
   live_link: "https://www.sandrahallie.com",
-  image: "portfolio_s.png",
+  image: "Portfolio_s.jpg",
   project_type: "Ruby on Rails"
 )
 

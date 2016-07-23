@@ -1,11 +1,11 @@
-<%= form_for(@other_project) do |f| %>
+<%= form_for(@project) do |f| %>
   <div class="row">
     <div class="col s12 m6 offset-m3">
-      <% if @other_project.errors.any? %>
+      <% if @project.errors.any? %>
         <div id="error_explanation">
-          <h2><%= pluralize(@other_project.errors.count, "error") %> prohibited this blog from being saved:</h2>
+          <h2><%= pluralize(@project.errors.count, "error") %> prohibited this blog from being saved:</h2>
           <ul>
-          <% @other_project.errors.full_messages.each do |message| %>
+          <% @project.errors.full_messages.each do |message| %>
             <li><%= message %></li>
           <% end %>
           </ul>
@@ -36,10 +36,16 @@
         <%= f.label :live_link %><br>
         <%= f.text_field :live_link %>
       </div>  
+
+      <div class="input-field">
+        <%= f.label :project_type %><br>
+        <%= f.text_field :project_type %>
+      </div> 
       
       <div class="actions center">
         <%= f.submit class: "btn waves-effect waves-light" %>
       </div>
+      
     </div>
   </div>
 <% end %>
