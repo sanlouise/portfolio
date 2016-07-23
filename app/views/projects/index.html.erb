@@ -1,81 +1,39 @@
-<main>
-  
-  <div id="index-banner" class="parallax-container">
-    <!--Image by Liz West, https://www.flickr.com/photos/calliope/118974357/in/photostream/-->
-    <div class="parallax"><%= image_tag("bestroses.jpg", alt: "banner img") %></div>
-    <br><br>
- -  <h1 class="header center white-text text-lighten-2">Portfolio</h1>	
-  </div>
-  
-  <div class="container">
-    <div class="section">
-      
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12">
-          <div class="icon-block">
+<div id="index-banner" class="parallax-container">
+  <!--Image by Liz West, https://www.flickr.com/photos/calliope/118974357/in/photostream/-->
+  <div class="parallax"><%= image_tag("bestroses.jpg", alt: "banner img") %></div>
+  <br><br>
+-  <h1 class="header center white-text text-lighten-2">Portfolio</h1> 
+</div>
 
-            <!--Header portfolio-->
-            <h2 class="center brown-text">Projects</h2>
-            <h5 class="center">Rails, React, iOS and much more.</h5>
-            <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="container">
-    <div class="row"> 
-            
-      <div class="col s12 center pagination">
-        <%= will_paginate @projects %>
-      </div>
+<div class="container">
+  <div class="section">
     
-      <!--Iterate through Projects-->
-      <% @projects.each do |project| %>
-        <hr/>
-        <div class="row">
-          <div class="col s12">
-            <div class="col s12 l7">
-              <!--Project Title-->
-              <h3 class="center"><%= project.title %></h3>
-              <!--Project Description-->
-              <p><%= project.description %></p>
-              <!--Project Points-->
-              <ul class="portfolio">
-                <%= project.points.html_safe %>
-              </ul>
-              <!--GitHub link-->
-              <p>
-                <i class="fa fa-github"></i> <%= link_to "GitHub Repository", 
-                                                            project.github %>
-              </p>
-            </div>
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12">
+        <div class="icon-block">
 
-            <% if project.project_type == "iOS" %>
-              <div class="col s12 l5 center">
-                <iframe src="<%= project.live_link %>" width="183px" height="391px" frameborder="0" scrolling="no"></iframe>
-              </div>
-            <% else %>
-              <div class="col s12 l5">
-                <% if project.live_link %>
-                  <%= link_to image_tag(project.image, class: "responsive-img z-depth-2 center"), project.live_link %>
-                <% else %>
-                  <%= image_tag(project.image, class: "responsive-img z-depth-2 center") %>
-                <% end %>
-              </div>
-            <% end %>
+          <!--Header portfolio-->
+          <h2 class="center brown-text">Projects</h2>
+          <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
 
+          <div class="center">
+            <h5 class="project-index">Filter by Category:</h5>
+            <%= link_to "All Projects", projects_path, class: "btn waves-effect waves-light btn-large" %>
+            <%= link_to "JavaScript", javascript_projects_path, class: "btn waves-effect waves-light btn-large" %>
+            <%= link_to "Ruby on Rails", ruby_on_rails_projects_path, class: "btn waves-effect waves-light btn-large" %>
+            <%= link_to "iOS", ios_projects_path, class: "btn waves-effect waves-light btn-large" %>
           </div>
         </div>
-      <% end %>
-  
-      <div class="col s12 center pagination">
-        <%= will_paginate @projects %>
       </div>
-      
     </div>
   </div>
-</main>
+</div>
+
+<div class="container">
+  <div class="row"> 
+          
+    <%= render 'projects', projects: @projects %>
+    
+  </div>
+</div>
