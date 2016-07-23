@@ -1,65 +1,64 @@
-<h5 class="pink-text text-darken-2 center">
-  <p id="notice"><%= notice %></p>
-</h5>
-
-
-
 <section class="blog-font">
+
   <h1 class="center">Blog</h1>
   <h4 class="center">Search Results</h4>
+
   <!--Intro Card-->
   <div class="row">
     <div class="col s12 m6 offset-m3">
         
-        <%= render 'blogs/lookup' %>
-
-          <!--<div class="col s12 m12 text-center">-->
-          <!--  <= button_to "Ruby on Rails", ruby_on_rails_blogs_path, class: "waves-effect waves-light btn" %>-->
-          <!--  <= button_to "Javascript", javascript_blogs_path, class: "waves-effect waves-light btn" %>-->
-          <!--  <= button_to "Personal Development", personal_development_blogs_path, class: "waves-effect waves-light btn" %>-->
-          <!--  <= button_to "Other", other_blogs_path, class: "waves-effect waves-light btn" %>-->
-          <!--</div>    -->
-          
-        </div>
-      </div>
+      <%= render 'blogs/lookup' %>
+        
     </div>
   </div>
   
   <% if @blogs.any? %>
     <!--Cards-->
     <% @blogs.sort_by{|item| item.created_at}.reverse.each do |blog| %>
+
       <div class="row">
         <div class="col s12 m6 offset-m3">
           <div class="card white-text center">
+
             <!--Image-->
             <div class="card-image waves-effect waves-block waves-light">
               <%= link_to image_tag(blog.image), blog_path(blog) if blog.image %>
             </div>
+
             <div class="card-content white-text center">
+
+              <!-- Topic -->
               <span class="blog-topic"><%= blog.topic %></span>
+
               </br>
-              <span class="card-title">
-                <!--Title-->
-                <%= link_to blog.title, blog_path(blog) %>
-              </span>
+              
+              <!--Title-->
+              <span class="card-title"><%= link_to blog.title, blog_path(blog) %></span>
+
               <!--Date-->
               <p><%= link_to blog.created_at.strftime("%B %e, %Y"), blog_path(blog) %></p>
+
             </div>
+
           </div>
         </div>
       </div>
+
     <% end %>
+
   <% else %>
+
     <div class="row">
       <div class="col s12 m6 offset-m3 center">
         <h5> Oops, no posts match your search criteria.</h5>
       </div>
     </div>
+
   <% end %>
   
   <div class="row">
     <div class="col-md-2 center">
-      <%= link_to "Back To All POsts", blogs_path, class: "waves-effect waves-light btn" %>
+      <%= link_to "Back To All Posts", blogs_path, class: "waves-effect waves-light btn" %>
     </div>
   </div>
 
