@@ -7,308 +7,6 @@
 #   topic: ""
 # )
 
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-  
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
 
 # -----------------------------------------
 # IOS PROJECTS
@@ -323,7 +21,6 @@ Project.create!(
 <li>Implemented UINavigationControllers.</li>",
   github: "https://github.com/sanlouise/pitch-perfect",
   live_link: "https://appetize.io/embed/fkk9z7ruhrhdhzmgd237vtgv98?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
-  image: "",
   project_type: "iOS"
 )
 
@@ -335,7 +32,6 @@ Project.create!(
 <li>Used SpriteKit for game development.</li>",
   github: "https://github.com/sanlouise/game",
   live_link: "https://appetize.io/embed/qbhqhp39gapbhqeur8edtbnyxg?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
-  image: "",
   project_type: "iOS"
 )
 
@@ -349,7 +45,6 @@ Project.create!(
 ",
   github: "https://github.com/sanlouise/quickweather",
   live_link: "https://appetize.io/embed/vrz0ut00jya8fy4mgpgbrb76v0?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
-  image: "",
   project_type: "iOS"
 )
 
@@ -363,7 +58,6 @@ Project.create!(
 <li>Ensured proper formatting of layout in both Portrait and Landscape mode.</li>",
   github: "https://github.com/sanlouise/Meme-app",
   live_link: "https://appetize.io/embed/re0xmchwvpa4w0375ye7jh14dm?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
-  image: "",
   project_type: "iOS"
 )
 
@@ -376,7 +70,6 @@ Project.create!(
 <li>To-do list items are presented in a Table View Controller.</li>",
   github: "https://github.com/sanlouise/to-do-list",
   live_link: "https://appetize.io/embed/k5meyqxdtjveqkmn2h46jegfcc?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black",
-  image: "",
   project_type: "iOS"
 )
 
@@ -541,7 +234,6 @@ Project.create!(
 <li>Integrated the Wikipedia API to search for links relevant to a specific location.</li>
 <li>Learned error handling with AJAX and JSONP.</li>",
   github: "https://github.com/sanlouise/ajax-project",
-  live_link: "",
   image: "city_search_s.jpg",
   project_type: "JavaScript"
 )
@@ -587,7 +279,6 @@ Project.create!(
 <li>Used Google Maps API for location rendering.</li>
 <li>Used Sparklines API for charts.</li>",
   github: "https://github.com/sanlouise/react-redux-app/",
-  live_link: "",
   image: "weather_api_s.jpg",
   project_type: "JavaScript"
 
@@ -600,7 +291,6 @@ Project.create!(
 <li>Built with Rails for the back-end.</li>
 <li>Used bootstrap and custom CSS for styling.</li>",
   github: "https://github.com/sanlouise/railsreact-expense-tracker",
-  live_link: "",
   image: "expense_tracker_s.jpg",
   project_type: "JavaScript"
 )
