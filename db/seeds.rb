@@ -508,7 +508,7 @@ Project.create!(
 <li>Deployed application using Heroku with PostgreSQL.</li>",
   github: "https://github.com/sanlouise/portfolio",
   live_link: "https://www.sandrahallie.com",
-  image: "Portfolio_s.jpg",
+  image: "portfolio_s.jpg",
   project_type: "Ruby on Rails"
 )
 
@@ -587,8 +587,8 @@ Project.create!(
 <li>Used Google Maps API for location rendering.</li>
 <li>Used Sparklines API for charts.</li>",
   github: "https://github.com/sanlouise/react-redux-app/",
-  live_link: "weather_api_s.jpg",
-  image: "",
+  live_link: "",
+  image: "weather_api_s.jpg",
   project_type: "JavaScript"
 
 )
