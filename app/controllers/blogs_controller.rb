@@ -1,4 +1,7 @@
 class BlogsController < ApplicationController
+  
+  include BlogsHelper
+
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :require_user, except: [:show, :index]
 
@@ -31,6 +34,7 @@ class BlogsController < ApplicationController
 
     respond_to do |format|
       if @blog.save
+        create_blog_file(@blog)
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
         format.json { render :show, status: :created, location: @blog }
       else
