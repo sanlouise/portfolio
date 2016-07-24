@@ -1,7 +1,6 @@
 module BlogsHelper
 
 	def create_blog_file(blog)
-
 		title = blog.title.downcase.gsub(/[ ]/, '_')
 
 		blog_file = File.new("db/blog_posts/#{title}.rb", 'w+')
