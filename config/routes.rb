@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get '/ios-projects', to: 'projects#ios'
   
   # Blogs
-  resources :blogs, only: [:index]  
+  resources :blogs
   resource :pages do
     collection do
       post :search, to: 'pages#search'
