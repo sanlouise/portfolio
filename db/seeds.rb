@@ -1,12 +1,8 @@
 # # BLOGS
 
-# # Blog Title
-# Blog.create!(
-#   title: "",
-#   body: "",
-#   topic: ""
-# )
-
+Dir[File.join(Rails.root, 'db', 'blog_posts', '*.rb')].each do |blog_post|
+  eval(File.read(blog_post))
+end
 
 # -----------------------------------------
 # IOS PROJECTS
