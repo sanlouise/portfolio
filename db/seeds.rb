@@ -1,4 +1,12 @@
-# # BLOGS
+# DUMMY USER
+
+user = User.create!(
+  email: "me@example.com",
+  password: "changethispassword123"
+)
+
+
+# BLOGS
 
 Dir[File.join(Rails.root, 'db', 'blog_posts', '*.rb')].each do |blog_post|
   eval(File.read(blog_post))
@@ -8,7 +16,7 @@ end
 # IOS PROJECTS
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Pitch Perfect",
   description: "This app records the user’s voice and then modulates the recorded audio to sound like a Chipmunk or Darth Vader. This app also lets users speed up or slow down the rate of playback. This was the final project for Intro to iOS App Development with Swift by Udacity. Note that the audio recorder only works on iOS mobile devices.",
   points: "<li>Created in Swift 2.0 using XCode for iOS 9, used AVFoundation.</li>
@@ -21,7 +29,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Flappy Bird Clone",
   description: "This app is a clone of the popular game 'Flappy Bird’ and was part of The Complete iOS 9 Developer Course, taught by Rob Percival.",
   points: "<li>Created with Swift 2.0 using XCode for iOS 9.</li>
@@ -32,7 +40,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Quick Weather",
   description: "This app retrieves the 3-day weather forecast for a city of the user’s choice.",
   points: "<li>Created with Swift 2.0 using XCode for iOS 9.</li>
@@ -45,7 +53,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Meme Me",
   description: "Users can take pictures and overlay text to make memes out of friends, family, or pets. Also allows sharing with others via social media or email, and viewing past memes in a table or collection view. This was the final project of the UIKit course of the iOS Developer Nanodegree of Udacity.",
   points: "<li>Created with Swift 2.0 using XCode for iOS 9.</li>
@@ -58,7 +66,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "To Do List",
   description: "This is a simple to-do list application that I built to gain familiarity with passing information over multiple View Controllers. ",
   points: "<li>Created with Swift 2.0 using XCode for iOS 9.</li>
@@ -75,7 +83,7 @@ Project.create!(
 
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Globetrotter",
   description: "A membership based, visually-rich platform that allows users to share their travel stories for free with the community.",
   points: "<li>Developed from scratch without scaffolding.</li>
@@ -92,7 +100,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Dive Buddies",
   description: "Scuba enthusiasts use this platform to find dive buddies all around the world. Contact information can be retrieved when signing up with a paid membership.",
   points: "<li>Created and implemented database architecture for the application using SQLite3.</li>
@@ -108,7 +116,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Mrs. Green",
   description: "Users sign up to the platform to view and share their favorite vegan recipes.",
   points: "<li>Developed from scratch without scaffolding.</li>
@@ -124,7 +132,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Stock Tracker",
   description: "Users can easily search and track stocks. They can also follow what their friends are tracking.",
   points: "<li>Developed from scratch with scaffolding.</li>
@@ -140,7 +148,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "PRJCT.APP",
   description: "Paying users can create projects for their organizations to manage deadlines and to store relevant documents. Users can add (non-paying) users to their projects.
 ",
@@ -157,7 +165,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Bloggy BDD",
   description: "This project was made to gain familiarity with behavior driven development (BDD) using RSpec and Capybara.",
   points: "<li>Developed with the sole intention of using RSpec and Capybara.</li>
@@ -171,7 +179,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "The Athletes Crib",
   description: "Users can keep track of their workouts in the lounge and compare their activity with friends and family.",
   points: "<li>Used RSpec, Capybara and Guard gem for Behavior Driven Development.</li>
@@ -187,7 +195,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Personal Website",
   description: "Personal website to demonstrate my portfolio and blog posts.",
   points: "<li>Used Devise for user authentication.</li>
@@ -202,7 +210,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Conscioux",
   description: "Users can easily search for high-quality, eco-friendly cosmetics.",
   points: "<li>Developed from scratch with scaffolding.</li>
@@ -222,7 +230,7 @@ Project.create!(
 # JAVASCRIPT PROJECTS
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Your City Checker",
   description: "Users fill out an address to view relevant information provided by APIs. The project was part of the AJAX course on Udacity.",
   points: "<li>Integrated the New York Times API for article searching.</li>
@@ -235,7 +243,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Node.js To Do Rest API",
   description: "Users can manage outstanding tasks with this todo REST API.",
   points: "<li>Created web server with Express.js.</li>
@@ -251,7 +259,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Node.js Chat App",
   description: "Users can send each other messages and can connect in different chat rooms.",
   points: "<li>Created web server with Express.js.</li>
@@ -266,7 +274,7 @@ Project.create!(
 )
 
 # Project title
-Project.create!(
+user.projects.create!(
   title: "React-Redux Weather App",
   description: "Users can retrieve the temperature, pressure and humidity of their favorite cities.",
   points: "<li>Built with React and Redux best practices in mind.</li>
@@ -280,7 +288,7 @@ Project.create!(
 
 )
 # Project title
-Project.create!(
+user.projects.create!(
   title: "Rails-React Expense Tracker",
   description: "Users can keep track of their income, expenses and final financial balance.",
   points: "<li>Built with React for front-end development.</li>

@@ -17,9 +17,12 @@ ActiveRecord::Schema.define(version: 20160408064736) do
     t.string   "title"
     t.string   "body"
     t.string   "topic"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "blogs", ["user_id"], name: "index_blogs_on_user_id"
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -37,9 +40,12 @@ ActiveRecord::Schema.define(version: 20160408064736) do
     t.string   "live_link"
     t.string   "image"
     t.string   "project_type"
+    t.integer  "user_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
+
+  add_index "projects", ["user_id"], name: "index_projects_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
