@@ -8,6 +8,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :live_link
       t.string :image
       t.string :project_type
+      t.integer :user_id
 
       t.timestamps null: false
     end
