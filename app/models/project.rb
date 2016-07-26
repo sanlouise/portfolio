@@ -8,7 +8,7 @@ class Project < ActiveRecord::Base
   validates :github, presence: true, uniqueness: true, length: { minimum: 10, maximum: 200 }
   validates :live_link, length: { maximum: 200 }
   validates :image, length: { maximum: 100 }
-  validates :project_type, length: {maximum: 20}
+  validates :project_type, presence: true, length: {maximum: 20}
  
   
 end
