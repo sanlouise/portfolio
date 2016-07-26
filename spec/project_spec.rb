@@ -25,7 +25,7 @@ RSpec.describe Project, type: :model do
     end
   end
 
-  describe 'its git_link' do
+  describe 'its github' do
     it do
       should validate_length_of(:github).is_at_least(5)
       should validate_length_of(:github).is_at_most(100)
