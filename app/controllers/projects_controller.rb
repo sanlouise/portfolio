@@ -6,7 +6,7 @@ class ProjectsController < ApplicationController
     if params[:project_type]
       filter_projects(project_params)
     else
-      @projects = Project.all.reverse
+      @projects = Project.where.not("project_type LIKE ?", "%iOS%").reverse
     end
   end
 

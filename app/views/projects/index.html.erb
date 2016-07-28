@@ -13,7 +13,7 @@
       <div class="col s12">
         <div class="icon-block">
 
-                  <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
+            <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
 
           <!--Header portfolio-->
           <h2 class="center brown-text">
@@ -45,6 +45,11 @@
   <div class="row"> 
           
     <%= render 'projects', projects: @projects %>
-    
+      <% if !params[:project_type] %>
+        <hr />
+        <h3 class="center">Also see My <span style="color:#F6358A"><%= link_to "iOS Projects", projects_path(project_type: 'iOS') %> </span>
+
+        </h3>
+      <% end %>
   </div>
 </div>
