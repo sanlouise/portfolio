@@ -17,13 +17,16 @@
           <h2 class="center brown-text">Projects</h2>
           <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
 
-          <div class="center">
-            <h5 class="project-index">Filter by Category:</h5>
-            <%= link_to "All Projects", projects_path, class: "btn waves-effect waves-light btn-large" %>
-            <%= link_to "JavaScript", javascript_projects_path, class: "btn waves-effect waves-light btn-large" %>
-            <%= link_to "Ruby on Rails", ruby_on_rails_projects_path, class: "btn waves-effect waves-light btn-large" %>
-            <%= link_to "iOS", ios_projects_path, class: "btn waves-effect waves-light btn-large" %>
-          </div>
+           <% if params[:project_type] %>
+              <%= link_to "View All Projects", projects_path, class: "orange-text text-darken-2" %>
+              <br /><br />
+            <% end %>
+
+            <%= link_to "JavaScript", projects_path(project_type: 'JavaScript') %>
+            | <%= link_to "Ruby on Rails", projects_path(project_type: 'Ruby on Rails') %>
+            | <%= link_to "iOS", projects_path(project_type: 'iOS') %>
+
+
         </div>
       </div>
     </div>
