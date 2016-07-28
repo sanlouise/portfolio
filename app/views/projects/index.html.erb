@@ -13,15 +13,21 @@
       <div class="col s12">
         <div class="icon-block">
 
+                  <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
+
           <!--Header portfolio-->
-          <h2 class="center brown-text">Projects</h2>
-          <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
+          <h2 class="center brown-text">
+             My <span style="color:#F6358A"><%= params[:project_type] if params[:project_type] %></span> Projects
+          </h2>
 
           <div class="center">
+
+          <h5>Filter by Category:</h5>
 
            <% if params[:project_type] %>
               <%= link_to "View All Projects", projects_path, class: "orange-text text-darken-2" %>
               <br /><br />
+
             <% end %>
 
             <%= link_to "JavaScript", projects_path(project_type: 'JavaScript'), class:"btn waves-effect waves-light pink darken-1" %>
