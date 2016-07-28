@@ -13,8 +13,8 @@ module ProjectsHelper
       @projects = Project.where("project_type LIKE ?", '%iOS%').reverse
 
     else
-      @projects = Project.all
-
+      params[:project_type] = nil
+      @projects = Project.all.reverse
     end
   end
 end
