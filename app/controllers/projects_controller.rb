@@ -1,23 +1,19 @@
 class ProjectsController < ApplicationController
 
+  include ProjectsHelper
+
   def index
-
-    if !params[:project_type]
-      @projects = Project.all
-
-    elsif params[:project_type] == 'JavaScript'
-      @projects = Project.where("project_type LIKE ?", '%JavaScript%').reverse
-
-    elsif params[:project_type] == 'Ruby on Rails'
-      @projects = Project.where("project_type LIKE ?", '%Rails%').reverse
-
-    elsif params[:project_type] == 'iOS'
-      @projects = Project.where("project_type LIKE ?", '%iOS%').reverse
-
+    if params[:project_type]
+      filter_projects(project_params)
     else
-      @projects = Project.all
-
+      @projects = Project.all.reverse
     end
   end
+
+  private
+
+    def project_params
+      params.require(:project_type)
+    end
   
 end
