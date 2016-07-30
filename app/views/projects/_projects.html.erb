@@ -20,6 +20,9 @@
 
       <% if project.project_type == "iOS" %>
         <div class="col s12 l5 center">
+          <%= image_tag(project.image, class: "responsive-img z-depth-2 center") %>
+
+
           <iframe src="<%= project.live_link %>" width="183px" height="391px" frameborder="0" scrolling="no"></iframe>
         </div>
       <% else %>

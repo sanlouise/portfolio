@@ -7413,7 +7413,7 @@ nav ul li.active {
 
 nav ul a {
   transition: background-color .3s;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: white !important;
   display: block;
   padding: 0 15px;
@@ -7430,8 +7430,10 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
 
 //Determines hover color of side nav!
 nav ul a:hover {
-  background-color: #d81b60;
+  background-color: #ff1744;
 }
+
+//#d81b60
 
 nav ul.left {
   float: left;
