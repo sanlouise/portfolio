@@ -149,18 +149,18 @@ user.projects.create!(
 
 # Project title
 user.projects.create!(
-  title: "PRJCT.APP",
+  title: "Data Flow",
   description: "Paying users can create projects for their organizations to manage deadlines and to store relevant documents. Users can add (non-paying) users to their projects.
 ",
   points: "<li>Used Devise for user authentication.</li>
 <li>Used Milia gem for multi-tenancy.</li>
-<li>Integrate application with SendGrid for email handling.</li>
-<li>Implement Stripe for payment handling and applied Javascript validations.</li>
+<li>Integrated application with SendGrid for email handling.</li>
+<li>Implemented Stripe for payment handling.</li>
 <li>Connected application to Amazon Web Services (AWS S3).</li>
 <li>Designed UI of the pages using custom CSS, Twitter Bootstrap, and JavaScript/JQuery.</li>",
   github: "https://github.com/sanlouise/projectmanagement",
-  live_link: "https://projectmgt-app.herokuapp.com/",
-  image: "project_s.jpg",
+  live_link: "https://github.com/sanlouise/saas-data-storage/",
+  image: "dataflow_s.jpg",
   project_type: "Ruby on Rails"
 )
 
