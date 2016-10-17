@@ -1,8 +1,7 @@
 <div id="index-banner" class="parallax-container">
-  <!--Image by Liz West, https://www.flickr.com/photos/calliope/118974357/in/photostream/-->
   <div class="parallax"><%= image_tag("bestroses.jpg", alt: "banner img") %></div>
   <br><br>
--  <h1 class="header center white-text text-lighten-2">Portfolio</h1> 
+  <h1 class="header center white-text text-lighten-2">Portfolio</h1> 
 </div>
 
 <div class="container">
@@ -13,7 +12,7 @@
       <div class="col s12">
         <div class="icon-block">
 
-            <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books. </p>
+          <p class="light center">I created the following projects by consulting countless online references, online bootcamps, and books.</p>
 
           <!--Header portfolio-->
           <h2 class="center brown-text">
@@ -22,9 +21,9 @@
 
           <div class="center">
 
-          <h5>Filter by Category:</h5>
+            <h5>Filter by Category:</h5>
 
-           <% if params[:project_type] %>
+            <% if params[:project_type] %>
               <%= link_to "View All Projects", projects_path, class: "orange-text text-darken-2" %>
               <br /><br />
 
@@ -43,11 +42,11 @@
 
 <div class="container">
   <div class="row"> 
-          
     <%= render 'projects', projects: @projects %>
       <% if !params[:project_type] %>
         <hr />
-        <h3 class="center">Also see My <span style="color:#F6358A"><%= link_to "iOS Projects", projects_path(project_type: 'iOS') %> </span>
+        <h3 class="center">
+          Also see My <span style="color:#F6358A"><%= link_to "iOS Projects", projects_path(project_type: 'iOS') %></span>.
 
         </h3>
       <% end %>
